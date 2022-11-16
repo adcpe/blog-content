@@ -7,9 +7,10 @@ const json = {
 
 const postList = fs.readdirSync('./posts')
 
-postList.forEach((el) => {
+postList.forEach((el, i) => {
   const fileContents = fs.readFileSync('./posts/' + el, 'utf8')
   const contentObj = matter(fileContents)
+  contentObj.id = i
   contentObj.data.slug = el.slice(0, -3)
   json.data.push(contentObj)
 })
