@@ -5,7 +5,7 @@ const json = {
   data: []
 }
 
-const postList = fs.readdirSync('./posts').reverse()
+const postList = fs.readdirSync('./posts')
 
 postList.forEach((el) => {
   const fileContents = fs.readFileSync('./posts/' + el, 'utf8')
