@@ -1,6 +1,6 @@
 {
   "name": "blog-content",
-  "description": "A repository for my blog posts (in markdown) and a script written in JavaScript to creata JSON file.",
+  "description": "A repository for my blog posts (in markdown) and a script written in JavaScript to create a JSON file.",
   "scripts": {
     "generate": "node ./bin/generate.js"
   },
