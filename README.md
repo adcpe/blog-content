@@ -5,7 +5,7 @@ This repo contains my blog posts in markdown with front matter. The blog is host
 
 ## Usage
 
-_**NOTE1:** This command requires Node.js_ _**NOTE2:** This command requires Node.js_
+_**NOTE:** This command requires Node.js_
 
 Run the following commands:
 
