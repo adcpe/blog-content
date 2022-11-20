@@ -1,6 +1,7 @@
 ---
 title: Rendering Markdown on React
 date: 2020-07-08
+tags: js react
 ---
 
 Markdown (MD) is the Rich Text Format of developers. With it we can put on a screen our ideas in a
