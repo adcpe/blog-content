@@ -106,7 +106,7 @@ You might have noticed this file that was created when you added the first submo
 ```
 [submodule "remote-demo"]
 	path = remote-demo
-	url = https://github.com/andres-dc/remote-sm-demo.git
+	url = https://github.com/adcpe/remote-sm-demo.git
 [submodule "local-sm-demo"]
 	path = local-sm-demo
 	url = ./local-sm-demo
@@ -129,7 +129,7 @@ Let's delete our parent directory and clone it from the remote.
 ```bash
 $ cd ..
 $ rm -rf submodule-demo
-$ git clone https://github.com/andres-dc/submodule-demo.git
+$ git clone https://github.com/adcpe/submodule-demo.git
 $ cd submodule-demo
 $ ls -a
 .git  local-sm-demo  remote-demo  .gitmodules  README.md
@@ -144,8 +144,8 @@ First, we must initialize the submodules.
 
 ```bash
 $ git submodule init
-Submodule 'local-sm-demo' (https://github.com/andres-dc/submodule-demo.git/local-sm-demo) registered for path 'local-sm-demo'
-Submodule 'remote-demo' (https://github.com/andres-dc/remote-sm-demo.git) registered for path 'remote-demo'
+Submodule 'local-sm-demo' (https://github.com/adcpe/submodule-demo.git/local-sm-demo) registered for path 'local-sm-demo'
+Submodule 'remote-demo' (https://github.com/adcpe/remote-sm-demo.git) registered for path 'remote-demo'
 ```
 
 Then, we can choose to fetch all submodules or select which one to fetch. Let's fetch the `remote-demo` submodule.
