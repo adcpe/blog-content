@@ -1,12 +1,12 @@
 ---
 title: Using Github/Gitlab as my CDN/API
 date: 2022-11-20
-tags: blogging experiment
+tags: blogging,experiment
 ---
 
 Now that I'm more into blogging than any other time in my life, I wanted to start using this space more than ever.
 
-My website is (or will be, because as of writing this post is not yet out) just a static site made with [11ty](https://www.11ty.dev/) and the blog will be a collection of all my posts, naturally. With this idea, I wanted to serve myself markdown files in the cheapest way possible.
+My website is (or will be, because as of writing this post is not yet out) just a static site made with [Eleventy](https://www.11ty.dev/) and the blog will be a collection of all my posts, naturally. With this idea, I wanted to serve myself markdown files in the cheapest way possible.
 
 Previously I had used [Sanity](https://www.sanity.io/). Sanity is alright. I get the appeal of it for teams that create content, but for me its just overkill. And the other side of it, I don't feel like I have my posts. Sanity could disappear any day and it would be a hassle to get my posts out of there. I wanted something that is future proof and that I have control of.
 
