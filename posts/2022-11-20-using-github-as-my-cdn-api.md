@@ -10,11 +10,11 @@ My website is (or will be, because as of writing this post is not yet out) just 
 
 Previously I had used [Sanity](https://www.sanity.io/). Sanity is alright. I get the appeal of it for teams that create content, but for me its just overkill. And the other side of it, I don't feel like I have my posts. Sanity could disappear any day and it would be a hassle to get my posts out of there. I wanted something that is future proof and that I have control of.
 
-Immediately I thought about writing an API is NodeJS or Ruby on Rails or maybve even Laravel. That's too much maintenance though. Sure, would make an interesting learning experience and probably another post, but I already had to build the site and other projects. Besides, I just wanted to write and the server costs were unappealing.
+Immediately I thought about writing an API is NodeJS or Ruby on Rails or maybe even Laravel. That's too much maintenance though. Sure, would make an interesting learning experience and probably another post, but I already had to build the site and other projects. Besides, I just wanted to write and the server costs were unappealing.
 
 So after a while thinking about this problem I realized the solution was in front of me. Serving my posts from a Git repository was my original idea. The repo would be just markdown files with front matter. Very simple.
 
-What if I could just retrieve them with [axios](https://github.com/axios/axios) requests? Then I rememebered that you can view files from `raw.githubusercontent.com`. That's perfect.
+What if I could just retrieve them with [axios](https://github.com/axios/axios) requests? Then I remembered that you can view files from `raw.githubusercontent.com`. That's perfect.
 
 ## The solution
 
@@ -24,7 +24,7 @@ Great! Now I just need a way to get the filenames on the posts folder. So I crea
 
 Can I get all my files with a single request instead of having to iterate over the file list? That's putting more processing on the initial file list creation.
 
-In my reasearch I came upon [gray-matter](https://github.com/jonschlinkert/gray-matter), a handy npm package that takes markdown and spits out an object with the content and data from front matter.
+In my research I came upon [gray-matter](https://github.com/jonschlinkert/gray-matter), a handy npm package that takes markdown and spits out an object with the content and data from front matter.
 
 Awesome!
 
