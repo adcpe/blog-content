@@ -2,6 +2,7 @@
 title: On Restarting
 date: 2022-11-17
 tags: personal
+description: I feel like myself again.
 ---
 
 For a long time I thought of a personal website as a chore. I'm not a much of a UI guy. I don't think I make compelling website designs. I don't know how to pick colors. I have a vague idea about fonts. I know which ones I like and they are mostly monospaced fonts. That's pretty much as far as far as I go.

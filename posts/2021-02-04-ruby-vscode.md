@@ -2,6 +2,7 @@
 title: Setting up Ruby for VSCode
 date: 2021-02-04
 tags: ruby,vscode
+description: This is how I set up VSCode to write Ruby.
 ---
 
 Here is a little guide to setting up IntelliSense and auto-completion on VSCode for Ruby quickly.
@@ -41,7 +42,7 @@ In a nutshell, IntelliSense provides autocomplete for your code (names for metho
 
 In a terminal, enter this command:
 
-```bash
+```console
 gem install solargraph rubocop-airbnb
 ```
 
@@ -49,7 +50,7 @@ It installs Solargraph and the Airbnb extension for Rubocop, which in turn insta
 
 Then, we install the VSCode extensions. You could look for `ruby.rebornix` and `castwide.solargraph` on the extension marketplace inside VSCode or copy/paste this commands on the command palette (usually Ctrl/Cmd + Shift + P or F1.)
 
-```bash
+```console
 ext install rebornix.Ruby
 ext install castwide.solargraph
 ```
@@ -88,13 +89,13 @@ To find the correct paths to Ruby and Solargraph, enter these commands depending
 
 #### Linux
 
-```bash
+```console
 which ruby which solargraph
 ```
 
 ##### Windows
 
-```bash
+```console
 where ruby where solargraph
 ```
 

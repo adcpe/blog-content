@@ -2,6 +2,7 @@
 title: Rendering Markdown on React
 date: 2020-07-08
 tags: javascript,react
+description: In this post I explore how to use Markdown inside of React, the simple way.
 ---
 
 Markdown (MD) is the Rich Text Format of developers. With it we can put on a screen our ideas in a visual way without having to rely on other, more complicated, markup languages.

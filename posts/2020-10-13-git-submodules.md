@@ -2,6 +2,7 @@
 title: Git Submodules
 date: 2020-10-13
 tags: git
+description: What are Git submodules? Why would you want to use them? Git submodules explained.
 ---
 
 ## What are Git Submodules?
@@ -18,7 +19,7 @@ Another use case might be when exploring a new language or framework and develop
 
 Let's create a new folder for our demo project, initialize Git and make our first commit with a newly created file.
 
-```bash
+```console
 $ mkdir submodules-demo
 $ cd submodules-demo
 $ git init
@@ -41,19 +42,19 @@ Now let's add a Submodule inside this repo. The Submodule can be an existing rem
 
 The syntax for adding a existing remote repo is as follows.
 
-```bash
+```console
 $ git submodule add [url] [destination folder (optional)]
 ```
 
 Now let's add a real repo and rename it inside the parent repo.
 
-```bash
+```console
 $ git submodule add https://github.com/adcpe/remote-sm-demo.git remote-demo
 ```
 
 Let's commit this changes, using only one line to commit all current changes.
 
-```bash
+```console
 $ git commit -am "Added a new remote submodule"
 [main 3914b02] Added a new remote submodule
  2 files changed, 4 insertions(+)
@@ -73,7 +74,7 @@ Now let's take a look a the method for adding a new local repo.
 
 For this method, we have to start by creating a new folder inside the parent, then initializing Git inside it and finally adding the new folder as a submodule
 
-```bash
+```console
 # create the folder and cd into it
 $ mkdir local-sm-demo
 $ cd local-sm-demo
@@ -126,7 +127,7 @@ When you clone a repository with submodules, Git only clone the parent repo. Mea
 
 Let's delete our parent directory and clone it from the remote.
 
-```bash
+```console
 $ cd ..
 $ rm -rf submodule-demo
 $ git clone https://github.com/adcpe/submodule-demo.git
@@ -142,7 +143,7 @@ This last command shows that the folder is empty. Let's fetch its contents.
 
 First, we must initialize the submodules.
 
-```bash
+```console
 $ git submodule init
 Submodule 'local-sm-demo' (https://github.com/adcpe/submodule-demo.git/local-sm-demo) registered for path 'local-sm-demo'
 Submodule 'remote-demo' (https://github.com/adcpe/remote-sm-demo.git) registered for path 'remote-demo'
@@ -150,7 +151,7 @@ Submodule 'remote-demo' (https://github.com/adcpe/remote-sm-demo.git) registered
 
 Then, we can choose to fetch all submodules or select which one to fetch. Let's fetch the `remote-demo` submodule.
 
-```bash
+```console
 $ git submodule update remote-demo/
 Cloning into '/home/adc/gh/submodule-demo/remote-demo'...
 Submodule path 'remote-demo': checked out '65ab769a363247ea7a6395e4fdc5b2652e4a8fdd'
