@@ -9,7 +9,7 @@ postList.forEach((el, i) => {
   const fileContents = fs.readFileSync('./posts/' + el, 'utf8')
   const contentObj = matter(fileContents)
 
-  contentObj.content = contentObj.content.slice(0, -1) // remove ending '\n'
+  contentObj.content = contentObj.content.slice(1, -1) // remove ending '\n'
   contentObj.data.slug = el.slice(0, -3) // remove '.md' from the slug
   contentObj.data.wordcount = contentObj.content.split(' ').length
   contentObj.id = i
