@@ -2,7 +2,7 @@
 title: Using Github/Gitlab as my CDN/API
 date: 2022-11-20
 tags: blogging,experiment
-description: How I went from a big content platform to a small JSON file for my blog.
+excerpt: How I went from a big content platform to a small JSON file hosted on Github for my blog.
 ---
 
 Now that I'm more into blogging than any other time in my life, I wanted to start using this space more than ever.

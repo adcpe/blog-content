@@ -2,7 +2,7 @@
 title: Git Submodules
 date: 2020-10-13
 tags: git
-description: What are Git submodules? Why would you want to use them? Git submodules explained.
+excerpt: What are Git submodules? Why would you want to use them? Git submodules explained.
 ---
 
 ## What are Git Submodules?

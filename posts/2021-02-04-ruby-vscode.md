@@ -2,7 +2,7 @@
 title: Setting up Ruby for VSCode
 date: 2021-02-04
 tags: ruby,vscode
-description: This is how I set up VSCode to write Ruby.
+excerpt: This is how I set up VSCode to write Ruby.
 ---
 
 Here is a little guide to setting up IntelliSense and auto-completion on VSCode for Ruby quickly.
