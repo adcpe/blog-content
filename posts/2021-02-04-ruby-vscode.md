@@ -65,9 +65,9 @@ Rubocop will take a global configuration file on your home directory. In Linux t
 
 The filename is `.rubocop.yml` and it must contain these two lines.
 
-```
+```yml
 require:
-- rubocop-airbnb
+  - rubocop-airbnb
 ```
 
 ### VSCode settings
