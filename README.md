@@ -9,11 +9,11 @@ _**NOTE:** [Node.js](https://nodejs.org/) is required._
 Run the following commands:
 
 ```console
-pnpm install       ## pnpm install
-pnpm run generate  ## pnpm generate - do this before every commit
+pnpm install
+pnpm generate
 ```
 
-This creates a `.json` file.
+This creates `postlist.json` which contains the blog data. GENERATE THE FILE BEFORE EVERY COMMIT.
 
 ## License
 
