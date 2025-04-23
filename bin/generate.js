@@ -1,12 +1,12 @@
-const fs = require('fs')
-const matter = require('gray-matter')
+import { readdirSync, readFileSync, writeFile } from 'fs'
+import matter from 'gray-matter'
 
 const json = { posts: [] }
 
-const postList = fs.readdirSync('./posts')
+const postList = readdirSync('./posts')
 
 postList.forEach((el, i) => {
-  const fileContents = fs.readFileSync('./posts/' + el, 'utf8')
+  const fileContents = readFileSync('./posts/' + el, 'utf8')
   const contentObj = matter(fileContents)
 
   contentObj.content = contentObj.content.slice(0, -1) // remove ending '\n'
@@ -17,4 +17,4 @@ postList.forEach((el, i) => {
   json.posts.push(contentObj)
 })
 
-fs.writeFile('postlist.json', JSON.stringify(json), () => {})
+writeFile('postlist.json', JSON.stringify(json), () => {})

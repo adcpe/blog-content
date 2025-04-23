@@ -9,8 +9,8 @@ _**NOTE:** [Node.js](https://nodejs.org/) is required._
 Run the following commands:
 
 ```console
-npm install       ## pnpm install
-npm run generate  ## pnpm generate - do this before every commit
+pnpm install       ## pnpm install
+pnpm run generate  ## pnpm generate - do this before every commit
 ```
 
 This creates a `.json` file.

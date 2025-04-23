@@ -1,6 +1,7 @@
 {
   "name": "blog-content",
   "description": "A repository for my blog posts (in markdown) and a script written in JavaScript to create a JSON file.",
+  "type": "module",
   "scripts": {
     "generate": "node ./bin/generate.js"
   },
